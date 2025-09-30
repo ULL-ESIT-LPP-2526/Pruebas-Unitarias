@@ -18,4 +18,8 @@ class TestFiguras < Test::Unit::TestCase
     assert_raise(ZeroDivisionError) {perimetro_cuadrado(1/0)}
     assert_raise(NoMethodError) {perimetro_cuadrado(Object.new)}
   end
+  def test_failure
+    assert_equal("4444", perimetro_cuadrado("4"))
+    assert_equal("4444", perimetro_cuadrado('4'))
+  end
 end
