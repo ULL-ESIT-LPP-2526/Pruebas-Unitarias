@@ -9,5 +9,9 @@ class TestFiguras < Test::Unit::TestCase
     # nothing
   end
   def test_simple
+    #Integer
+    assert_equal(16, perimetro_cuadrado(4))
+    #Float
+    assert_equal(16.0, perimetro_cuadrado(4.0))
   end
 end
